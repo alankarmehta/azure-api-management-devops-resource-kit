@@ -15,7 +15,7 @@
                 "description": "Version set for HTTP bin API",
                 "versionQueryName": "api-version",
                 "displayName": "Versioned HTTP bin API",
-                "versioningScheme": "query"
+                "versioningScheme": "Query"
             }
         }
     ]
