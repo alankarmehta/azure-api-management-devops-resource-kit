@@ -4,6 +4,7 @@
     "parameters": {
         "repoBaseUrl":{
             "type": "string",
+            "defaultValue": "https://github.com/alankarmehta/azure-api-management-devops-resource-kit/tree/master/example",
             "metadata": {
                 "description": "Base URL of the repository"
             }
@@ -234,7 +235,7 @@
             "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
              "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]",
              "[resourceId('Microso,ft.Resources/deployments', 'httpBinV1Template')]",
-             "[resourceId('Microsoft.Resources/deployments', 'httpBinV2Template')]"
+             "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]"
             ]
          }
     ],
