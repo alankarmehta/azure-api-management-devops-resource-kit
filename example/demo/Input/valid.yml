@@ -30,5 +30,6 @@ apis:
       #    scope: scope
     products: starter    # Optional, adds api to the specified products
 outputLocation: ./Output   # Required, folder the creator will write the templates to
-# linked: true   # Optional
+linked: true   # Optional
+linkedTemplatesBaseUrl : ./Output
 # linkedTemplatesBaseUrl : https://raw.githubusercontent.com/miaojiang/azure-api-management-devops-example/MVP/example/demo/Output  # Required if 'linked' property is set to true

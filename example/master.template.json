@@ -215,6 +215,27 @@
              "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]",
              "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]"
             ]
+         },
+         {
+            "apiVersion": "2017-05-10",
+            "name": "demoioTemplate",
+            "type": "Microsoft.Resources/deployments",
+            "properties": {
+              "mode": "Incremental",
+              "templateLink": {
+                 "uri":"[concat(parameters('repoBaseUrl'), '/demo/output/contosoapim-dev-master.template.json')]",
+                 "contentVersion":"1.0.0.0"
+              },
+              "parameters": {
+                 "ApimServiceName": {"value": "[parameters('ApimServiceName')]" }
+               }
+            },
+            "dependsOn": [
+            "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
+             "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]",
+             "[resourceId('Microso,ft.Resources/deployments', 'httpBinV1Template')]",
+             "[resourceId('Microsoft.Resources/deployments', 'httpBinV2Template')]"
+            ]
          }
     ],
     "outputs": {}
