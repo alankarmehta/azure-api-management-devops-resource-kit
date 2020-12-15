@@ -235,7 +235,7 @@
             "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
              "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]",
              "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]",
-             "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]"
+             "[resourceId('Microsoft.Resources/deployments', 'httpBinV2Template')]"
             ]
          }
     ],
