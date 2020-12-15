@@ -4,7 +4,6 @@
    "parameters": {
        "repoBaseUrl":{
            "type": "string",
-           "defaultValue": "https://github.com/alankarmehta/azure-api-management-devops-resource-kit/blob/master/example",
            "metadata": {
                "description": "Base URL of the repository"
            }
