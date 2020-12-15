@@ -234,7 +234,7 @@
             "dependsOn": [
             "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
              "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]",
-             "[resourceId('Microso,ft.Resources/deployments', 'httpBinV1Template')]",
+             "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]",
              "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]"
             ]
          }
