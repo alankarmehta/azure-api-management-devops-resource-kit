@@ -4,6 +4,7 @@
    "parameters": {
        "repoBaseUrl":{
            "type": "string",
+           "defaultValue": "https://github.com/alankarmehta/azure-api-management-devops-resource-kit/tree/master/example",
            "metadata": {
                "description": "Base URL of the repository"
            }
@@ -223,7 +224,7 @@
            "properties": {
              "mode": "Incremental",
              "templateLink": {
-                "uri":"[concat(parameters('repoBaseUrl'), '/contosoapim-dev-master.template.json')]",
+                "uri":"[concat(parameters('repoBaseUrl'), '/demo/Output/contosoapim-dev-master.template.json')]",
                 "contentVersion":"1.0.0.0"
              },
              "parameters": {
