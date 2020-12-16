@@ -98,25 +98,6 @@
         },
         {
            "apiVersion": "2017-05-10",
-           "name": "productStarterTemplate",
-           "type": "Microsoft.Resources/deployments",
-           "properties": {
-             "mode": "Incremental",
-             "templateLink": {
-                "uri": "https://github.com/alankarmehta/azure-api-management-devops-resource-kit/blob/master/example/products/product-starter.template.json",
-                "contentVersion":"1.0.0.0"
-             },
-             "parameters": {
-                "ApimServiceName": {"value": "[parameters('ApimServiceName')]" }
-              }
-           },
-           "dependsOn": [
-            "[resourceId('Microsoft.Resources/deployments', 'serviceTemplate')]",
-            "[resourceId('Microsoft.Resources/deployments', 'groupsTemplate')]"
-           ]
-        },
-        {
-           "apiVersion": "2017-05-10",
            "name": "groupsUsersTemplate",
            "type": "Microsoft.Resources/deployments",
            "properties": {
@@ -149,7 +130,6 @@
               }
            },
            "dependsOn": [
-            "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
             "[resourceId('Microsoft.Resources/deployments', 'usersTemplate')]"
            ]
         },
@@ -186,7 +166,6 @@
               }
            },
            "dependsOn": [
-           "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
             "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]"
            ]
         },
@@ -205,7 +184,6 @@
               }
            },
            "dependsOn": [
-           "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
             "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]",
             "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]"
            ]
@@ -225,7 +203,6 @@
               }
            },
            "dependsOn": [
-           "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
             "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]",
             "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]",
             "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]"
