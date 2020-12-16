@@ -4,6 +4,7 @@
    "parameters": { 
        "ApimServiceName": {
            "type": "string",
+           "defaultValue": "contosoapim-dev2020",
            "metadata": {
                "description" : "The name of the API Management"
            }
@@ -18,6 +19,7 @@
        },
        "publisherName": {
            "type": "string",
+           "defaultValue": "Contoso",
            "minLength": 1,
            "metadata": {
                "description": "The name of the owner of the service"
