@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "ApimServiceName": {
-      "value": "contosoapim-dev20201"
+      "value": "contosoapim-dev202012"
     },
     "LinkedTemplatesBaseUrl": {
       "value": "./demo/Output"

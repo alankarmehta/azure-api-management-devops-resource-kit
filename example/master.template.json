@@ -4,7 +4,7 @@
    "parameters": { 
        "ApimServiceName": {
            "type": "string",
-           "defaultValue": "contosoapim-dev20201",
+           "defaultValue": "contosoapim-dev20202",
            "metadata": {
                "description" : "The name of the API Management"
            }
