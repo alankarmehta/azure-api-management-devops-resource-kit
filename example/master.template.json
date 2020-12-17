@@ -193,7 +193,7 @@
         },
         {
            "apiVersion": "2017-05-10",
-           "name": "demoioTemplate1",
+           "name": "demoioTemplate3",
            "type": "Microsoft.Resources/deployments",
            "properties": {
              "mode": "Incremental",
