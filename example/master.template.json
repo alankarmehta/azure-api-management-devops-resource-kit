@@ -198,7 +198,7 @@
            "properties": {
              "mode": "Incremental",
              "templateLink": {
-                "uri": "https://raw.githubusercontent.com/alankarmehta/azure-api-management-devops-resource-kit/master/example/master.template.json",
+                "uri": "https://raw.githubusercontent.com/alankarmehta/azure-api-management-devops-resource-kit/master/example/demo/Output/contosoapim-dev-master.template.json",
                 "contentVersion":"1.0.0.0"
              },
              "parameters": {
@@ -208,7 +208,7 @@
            "dependsOn": [
             "[resourceId('Microsoft.Resources/deployments', 'httpBinVersionSetTemplate')]",
             "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]",
-            "[resourceId('Microsoft.Resources/deployments', 'httpBinV1Template')]"
+            "[resourceId('Microsoft.Resources/deployments', 'httpBinV2Template')]"
            ]
         }
    ],
