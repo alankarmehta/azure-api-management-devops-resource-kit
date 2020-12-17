@@ -37,16 +37,6 @@
             "dependsOn": [
                 "[resourceId('Microsoft.ApiManagement/service/products', parameters('ApimServiceName'), 'starter')]"
             ]
-        },
-        {
-            "type": "Microsoft.ApiManagement/service/products/groups",
-            "name": "[concat(parameters('ApimServiceName'), '/starter/contosogroup' )]",
-            "apiVersion": "2017-03-01",
-            "scale": null,
-            "properties": {},
-            "dependsOn": [
-                "[resourceId('Microsoft.ApiManagement/service/products', parameters('ApimServiceName'), 'starter')]"
-            ]
         }
     ],
     "outputs": {}
